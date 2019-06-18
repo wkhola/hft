@@ -1,0 +1,48 @@
+2018-05-17 09:57:17初始化失败Traceback (most recent call last):
+  File "D:/DATA/repertory-data-gather/write_data_main.py", line 19, in init
+    receive.recevie_data(write_sql)
+  File "D:\DATA\repertory-data-gather\recevice_data.py", line 29, in recevie_data
+    msg = self.bus_service.receive_subscription_message('repertorysniff', 'repertorysub', peek_lock=False)
+  File "C:\Users\hola\Anaconda2\lib\site-packages\azure\servicebus\servicebusservice.py", line 1095, in receive_subscription_message
+    timeout)
+  File "C:\Users\hola\Anaconda2\lib\site-packages\azure\servicebus\servicebusservice.py", line 829, in read_delete_subscription_message
+    response = self._perform_request(request)
+  File "C:\Users\hola\Anaconda2\lib\site-packages\azure\servicebus\servicebusservice.py", line 1228, in _perform_request
+    resp = self._filter(request)
+  File "C:\Users\hola\Anaconda2\lib\site-packages\azure\servicebus\_http\httpclient.py", line 181, in perform_request
+    self.send_request_body(connection, request.body)
+  File "C:\Users\hola\Anaconda2\lib\site-packages\azure\servicebus\_http\httpclient.py", line 145, in send_request_body
+    connection.send(None)
+  File "C:\Users\hola\Anaconda2\lib\site-packages\azure\servicebus\_http\requestsclient.py", line 81, in send
+    self.response = self.session.request(self.method, self.uri, data=request_body, headers=self.headers, timeout=self.timeout)
+  File "C:\Users\hola\Anaconda2\lib\site-packages\requests\sessions.py", line 475, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\hola\Anaconda2\lib\site-packages\requests\sessions.py", line 596, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\hola\Anaconda2\lib\site-packages\requests\adapters.py", line 473, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', error(10054, ''))
+2018-05-17 09:58:46初始化失败Traceback (most recent call last):
+  File "D:/DATA/repertory-data-gather/write_data_main.py", line 19, in init
+    receive.recevie_data(write_sql)
+  File "D:\DATA\repertory-data-gather\recevice_data.py", line 29, in recevie_data
+    msg = self.bus_service.receive_subscription_message('repertorysniff', 'repertorysub', peek_lock=False)
+  File "C:\Users\hola\Anaconda2\lib\site-packages\azure\servicebus\servicebusservice.py", line 1095, in receive_subscription_message
+    timeout)
+  File "C:\Users\hola\Anaconda2\lib\site-packages\azure\servicebus\servicebusservice.py", line 829, in read_delete_subscription_message
+    response = self._perform_request(request)
+  File "C:\Users\hola\Anaconda2\lib\site-packages\azure\servicebus\servicebusservice.py", line 1228, in _perform_request
+    resp = self._filter(request)
+  File "C:\Users\hola\Anaconda2\lib\site-packages\azure\servicebus\_http\httpclient.py", line 181, in perform_request
+    self.send_request_body(connection, request.body)
+  File "C:\Users\hola\Anaconda2\lib\site-packages\azure\servicebus\_http\httpclient.py", line 145, in send_request_body
+    connection.send(None)
+  File "C:\Users\hola\Anaconda2\lib\site-packages\azure\servicebus\_http\requestsclient.py", line 81, in send
+    self.response = self.session.request(self.method, self.uri, data=request_body, headers=self.headers, timeout=self.timeout)
+  File "C:\Users\hola\Anaconda2\lib\site-packages\requests\sessions.py", line 475, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\hola\Anaconda2\lib\site-packages\requests\sessions.py", line 596, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\hola\Anaconda2\lib\site-packages\requests\adapters.py", line 473, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', error(10054, ''))
